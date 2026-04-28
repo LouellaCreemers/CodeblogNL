@@ -1,4 +1,4 @@
-# CodeBlog.nl - Project Foundation
+# CodeBlog.nl
 
 CodeBlog.nl is a Dutch-language blog platform focusing on .NET, C#, Azure, and VueJS. While this README is in English to assist international developers, please note that the primary content and community are Dutch-speaking.
 
