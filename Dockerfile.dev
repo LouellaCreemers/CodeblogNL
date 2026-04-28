@@ -1,0 +1,28 @@
+# Use Node.js 24 image
+FROM node:24-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Install dependencies needed for better-sqlite3 (python3, make, g++)
+RUN apk add --no-cache python3 make g++
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install all dependencies (including devDependencies)
+RUN npm install
+
+# Copy the rest of the application
+COPY . .
+
+# Expose the Nuxt dev server port
+EXPOSE 3000
+
+# Set environment variables for development
+ENV HOST=0.0.0.0
+ENV PORT=3000
+ENV NODE_ENV=development
+
+# Start the dev server
+CMD ["npm", "run", "dev"]
