@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     url: 'https://codeblog.nl',
     name: 'CodeBlogNL'
   },
+  css: ['~/assets/css/main.css'],
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   app: {
