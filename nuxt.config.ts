@@ -27,9 +27,17 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   modules: ['@nuxt/ui', '@nuxt/content', '@nuxt/hints', '@nuxt/a11y', '@nuxtjs/sitemap', '@nuxtjs/robots', 'nuxt-gtag'],
   content: {
-    highlight: {
-      theme: 'github-dark',
-      preload: ['csharp', 'dotnet', 'javascript', 'typescript', 'vue']
+    database: {
+      type: 'sqlite',
+      filename: ':memory:'
+    },
+    build: {
+      markdown: {
+        highlight: {
+          theme: 'github-dark',
+          langs: ['csharp', 'javascript', 'typescript', 'vue']
+        }
+      }
     }
   },
   gtag:{
