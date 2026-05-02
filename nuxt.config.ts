@@ -24,7 +24,6 @@ export default defineNuxtConfig({
       ]
     }
   },
-  css: ['~/assets/css/main.css'],
   modules: ['@nuxt/ui', '@nuxt/content', '@nuxt/hints', '@nuxt/a11y', '@nuxtjs/sitemap', '@nuxtjs/robots', 'nuxt-gtag'],
   content: {
     database: {
