@@ -34,6 +34,9 @@ jobs:
         with:
           name: node-app
           path: .output
+          include-hidden-files: true
+          if-no-files-found: error
+
 
   deploy:
     runs-on: ubuntu-latest
@@ -48,8 +51,6 @@ jobs:
         with:
           name: node-app
           path: .output
-          include-hidden-files: true
-          if-no-files-found: error
 
       - name: Login to Azure
         uses: azure/login@v2
