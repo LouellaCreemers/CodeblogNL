@@ -7,6 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "lint": "eslint .",
     "test": "playwright test",
     "test:ui": "playwright test --ui",
     "postinstall": "nuxt prepare"
@@ -24,10 +25,12 @@
     "@iconify-json/heroicons": "^1.2.3",
     "@iconify-json/lucide": "^1.2.102",
     "@nuxt/a11y": "^1.0.0-alpha.1",
+    "@nuxt/eslint": "^1.15.2",
     "@nuxt/ui": "^4.6.1",
     "@nuxtjs/robots": "^6.0.7",
     "@nuxtjs/sitemap": "^8.0.13",
     "@playwright/test": "^1.59.1",
-    "@types/node": "^25.6.0"
+    "@types/node": "^25.6.0",
+    "eslint": "^9.39.4"
   }
 }

@@ -43,8 +43,4 @@ interface Post {
 defineProps<{
   post: Post
 }>()
-
-const formatDate = (dateString: string) => {
-  return formatBlogDate(dateString)
-}
 </script>

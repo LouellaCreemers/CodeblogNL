@@ -25,7 +25,7 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: ['@nuxt/ui', '@nuxt/content', '@nuxt/hints', '@nuxt/a11y', '@nuxtjs/sitemap', '@nuxtjs/robots', 'nuxt-gtag'],
+  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/content', '@nuxt/hints', '@nuxt/a11y', '@nuxtjs/sitemap', '@nuxtjs/robots', 'nuxt-gtag'],
   content: {
     database: {
       type: 'sqlite',
