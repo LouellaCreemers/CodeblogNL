@@ -30,4 +30,11 @@ useSeoMeta({
   title: 'Blog - CodeBlog.nl',
   description: 'Lees de nieuwste artikelen over .NET, Azure, VueJS en moderne software ontwikkeling.'
 })
+
+defineOgImage({
+  component: 'OgImageGeneral',
+  title: 'Blog Artikelen',
+  description: 'Ontdek onze laatste technische artikelen en tutorials.',
+  alt: 'Blog overzicht - CodeBlog.nl'
+})
 </script>
