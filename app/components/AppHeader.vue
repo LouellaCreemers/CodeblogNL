@@ -27,7 +27,7 @@
             <div class="w-8 h-8" />
           </template>
         </ClientOnly>
-        <USlideover title="Menu" side="right" class="md:hidden">
+        <USlideover v-model:open="isOpen" title="Menu" side="right" class="md:hidden">
           <UButton
             icon="i-heroicons-bars-3"
             color="gray"
@@ -36,9 +36,9 @@
           />
           <template #body>
             <nav class="flex flex-col gap-4 text-lg">
-              <NuxtLink to="/" class="hover:text-primary-500 py-2">Home</NuxtLink>
-              <NuxtLink to="/blog" class="hover:text-primary-500 py-2">Blog</NuxtLink>
-              <NuxtLink to="/over" class="hover:text-primary-500 py-2">Over</NuxtLink>
+              <NuxtLink to="/" class="hover:text-primary-500 py-2" @click="isOpen = false">Home</NuxtLink>
+              <NuxtLink to="/blog" class="hover:text-primary-500 py-2" @click="isOpen = false">Blog</NuxtLink>
+              <NuxtLink to="/over" class="hover:text-primary-500 py-2" @click="isOpen = false">Over</NuxtLink>
             </nav>
           </template>
         </USlideover>
@@ -58,4 +58,10 @@ const isDark = computed({
   }
 })
 
+const isOpen = ref(false)
+
+const route = useRoute()
+watch(() => route.fullPath, () => {
+  isOpen.value = false
+})
 </script>
