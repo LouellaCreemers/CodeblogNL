@@ -1,0 +1,28 @@
+name: Linting
+
+on:
+  pull_request:
+    paths:
+      - '**/*.vue'
+      - '**/*.ts'
+
+env:
+  NODE_VERSION: '24.x'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js version
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run lint
+        run: npm run lint
