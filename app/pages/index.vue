@@ -82,8 +82,7 @@ useSeoMeta({
   description: 'CodeBlog.nl is hét platform voor Nederlandstalige developers over .NET, C#, Azure, VueJS and moderne software engineering.'
 })
 
-defineOgImage({
-  component: 'OgImageGeneral',
+defineOgImageComponent('General', {
   title: 'CodeBlog.nl',
   description: 'Technische inzichten voor Nederlandstalige developers over .NET, C#, Azure en VueJS.',
   alt: 'CodeBlog.nl - Social media afbeelding'

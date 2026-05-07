@@ -69,8 +69,7 @@ if (doc.value) {
     description: doc.value.description
   })
 
-  defineOgImage({
-    component: 'OgImageBlogArticle',
+  defineOgImageComponent('BlogArticle', {
     title: doc.value.title,
     description: doc.value.description,
     authorName: author.value?.name || doc.value.author,
