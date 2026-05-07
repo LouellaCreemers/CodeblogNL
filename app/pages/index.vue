@@ -79,6 +79,13 @@ const { recentPosts } = useBlogPosts()
 
 useSeoMeta({
   title: 'CodeBlog.nl - .NET, C#, Azure en VueJS voor Nederlandstalige Developers',
-  description: 'CodeBlog.nl is hét platform voor Nederlandstalige developers over .NET, C#, Azure, VueJS en moderne software engineering.'
+  description: 'CodeBlog.nl is hét platform voor Nederlandstalige developers over .NET, C#, Azure, VueJS and moderne software engineering.'
+})
+
+defineOgImage({
+  component: 'OgImageGeneral',
+  title: 'CodeBlog.nl',
+  description: 'Technische inzichten voor Nederlandstalige developers over .NET, C#, Azure en VueJS.',
+  alt: 'CodeBlog.nl - Social media afbeelding'
 })
 </script>

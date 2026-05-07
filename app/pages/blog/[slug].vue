@@ -57,10 +57,25 @@ if (!doc.value) {
   throw createError({ statusCode: 404, statusMessage: 'Post niet gevonden', fatal: true })
 }
 
+// Fetch author details for the OG Image
+const { data: author } = await useAsyncData(`author-${doc.value?.author}`, () => {
+  if (!doc.value?.author) return null
+  return queryCollection('authors').where('name', '=', doc.value.author).first()
+})
+
 if (doc.value) {
   useSeoMeta({
     title: `${doc.value.title} - CodeBlog.nl`,
     description: doc.value.description
+  })
+
+  defineOgImage({
+    component: 'OgImageBlogArticle',
+    title: doc.value.title,
+    description: doc.value.description,
+    authorName: author.value?.name || doc.value.author,
+    authorImage: author.value?.image,
+    alt: `Social media afbeelding voor het artikel: ${doc.value.title}`
   })
 }
 

@@ -52,4 +52,11 @@ useSeoMeta({
   title: 'Over ons - CodeBlog.nl',
   description: 'Leer meer over de missie en visie van CodeBlog.nl, hét platform voor Nederlandstalige developers.'
 })
+
+defineOgImage({
+  component: 'OgImageGeneral',
+  title: 'Over CodeBlog.nl',
+  description: 'Full-stack content, gewoon in het Nederlands.',
+  alt: 'Over CodeBlog.nl - Social media afbeelding'
+})
 </script>

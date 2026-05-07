@@ -25,7 +25,21 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/content', '@nuxt/hints', '@nuxt/a11y', '@nuxtjs/sitemap', '@nuxtjs/robots', 'nuxt-gtag'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/ui',
+    '@nuxt/content',
+    '@nuxt/a11y',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
+    'nuxt-gtag',
+    'nuxt-og-image'
+  ],
+  ogImage: {
+    defaults: {
+      component: 'OgImageGeneral'
+    }
+  },
   content: {
     database: {
       type: 'sqlite',
