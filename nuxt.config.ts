@@ -37,7 +37,7 @@ export default defineNuxtConfig({
   ],
   ogImage: {
     defaults: {
-      component: 'OgImageGeneral'
+      component: 'General'
     }
   },
   content: {

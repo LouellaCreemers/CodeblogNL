@@ -31,8 +31,7 @@ useSeoMeta({
   description: 'Lees de nieuwste artikelen over .NET, Azure, VueJS en moderne software ontwikkeling.'
 })
 
-defineOgImage({
-  component: 'OgImageGeneral',
+defineOgImageComponent('General', {
   title: 'Blog Artikelen',
   description: 'Ontdek onze laatste technische artikelen en tutorials.',
   alt: 'Blog overzicht - CodeBlog.nl'
