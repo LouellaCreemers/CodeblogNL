@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   },
   site: {
     url: 'https://codeblog.nl',
-    name: 'CodeBlogNL'
+    name: 'CodeBlog.nl'
   },
   css: ['~/assets/css/main.css'],
   compatibilityDate: '2025-07-15',
@@ -22,6 +22,9 @@ export default defineNuxtConfig({
       },
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ],
+      meta: [
+        { name: 'apple-mobile-web-app-title', content: 'CodeBlog.nl' },
       ]
     }
   },

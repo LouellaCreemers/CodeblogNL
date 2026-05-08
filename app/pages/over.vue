@@ -50,7 +50,24 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Over ons - CodeBlog.nl',
-  description: 'Leer meer over de missie en visie van CodeBlog.nl, hét platform voor Nederlandstalige developers.'
+  description: 'Leer meer over de missie en visie van CodeBlog.nl, hét platform voor Nederlandstalige developers.',
+
+  ogTitle: 'Over ons - CodeBlog.nl',
+  ogDescription: 'Leer meer over de missie en visie van CodeBlog.nl, hét platform voor Nederlandstalige developers.',
+  ogType: 'website',
+  ogUrl: 'https://codeblog.nl/over-ons',
+  ogSiteName: 'CodeBlog.nl',
+  ogLocale: 'nl_NL',
+  ogImage: 'https://codeblog.nl/og/over-ons.png',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageAlt: 'Over ons - CodeBlog.nl',
+
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Over ons - CodeBlog.nl',
+  twitterDescription: 'Leer meer over de missie en visie van CodeBlog.nl, hét platform voor Nederlandstalige developers.',
+  twitterImage: 'https://codeblog.nl/og/over-ons.png',
+  twitterImageAlt: 'Over ons - CodeBlog.nl',
 })
 
 defineOgImageComponent('General', {
