@@ -79,7 +79,24 @@ const { recentPosts } = useBlogPosts()
 
 useSeoMeta({
   title: 'CodeBlog.nl - .NET, C#, Azure en VueJS voor Nederlandstalige Developers',
-  description: 'CodeBlog.nl is hét platform voor Nederlandstalige developers over .NET, C#, Azure, VueJS and moderne software engineering.'
+  description: 'CodeBlog.nl is hét platform voor Nederlandstalige developers over .NET, C#, Azure, VueJS en moderne software engineering.',
+
+  ogTitle: 'CodeBlog.nl - .NET, C#, Azure en VueJS voor Nederlandstalige Developers',
+  ogDescription: 'CodeBlog.nl is hét platform voor Nederlandstalige developers over .NET, C#, Azure, VueJS en moderne software engineering.',
+  ogType: 'website',
+  ogUrl: 'https://codeblog.nl/',
+  ogSiteName: 'CodeBlog.nl',
+  ogLocale: 'nl_NL',
+  ogImage: 'https://codeblog.nl/og/home.png',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageAlt: 'CodeBlog.nl - Nederlandstalige blog over .NET, C#, Azure en VueJS',
+
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'CodeBlog.nl - .NET, C#, Azure en VueJS voor Nederlandstalige Developers',
+  twitterDescription: 'CodeBlog.nl is hét platform voor Nederlandstalige developers over .NET, C#, Azure, VueJS en moderne software engineering.',
+  twitterImage: 'https://codeblog.nl/og/home.png',
+  twitterImageAlt: 'CodeBlog.nl - Nederlandstalige blog over .NET, C#, Azure en VueJS',
 })
 
 defineOgImageComponent('General', {

@@ -66,7 +66,18 @@ const { data: author } = await useAsyncData(`author-${doc.value?.author}`, () =>
 if (doc.value) {
   useSeoMeta({
     title: `${doc.value.title} - CodeBlog.nl`,
-    description: doc.value.description
+    description: doc.value.description,
+
+    ogTitle: `${doc.value.title} - CodeBlog.nl`,
+    ogDescription: doc.value.description,
+    ogType: 'article',
+    ogUrl: `https://codeblog.nl/blog/${doc.value.slug}`,
+
+    articleAuthor: author.value?.name || doc.value.author,
+    articlePublishedTime: doc.value.date,
+
+    twitterTitle: `${doc.value.title} - CodeBlog.nl`,
+    twitterDescription: doc.value.description,
   })
 
   defineOgImageComponent('BlogArticle', {
@@ -74,7 +85,7 @@ if (doc.value) {
     description: doc.value.description,
     authorName: author.value?.name || doc.value.author,
     authorImage: author.value?.image,
-    alt: `Social media afbeelding voor het artikel: ${doc.value.title}`
+    alt: `Social media afbeelding voor het artikel: ${doc.value.title}`,
   })
 }
 
