@@ -13,7 +13,7 @@
       <section class="space-y-4">
         <h2 class="text-2xl font-bold">Waarom CodeBlog.nl?</h2>
         <p>
-          Omdat goede technische content over het Microsoft-ecosysteem in onze eigen taal schaars is. Wij richten ons op de volledige stack: van robuuste backends in .NET tot schaalbare Azure-oplossingen en moderne frontends met VueJS.
+          Omdat goede technische content over het Microsoft-ecosysteem in onze eigen taal schaars is. Wij richten ons op de volledige stack: van robuuste backends in .NET tot schaalbare Azure-oplossingen en moderne frontends met TypeScript.
         </p>
       </section>
 

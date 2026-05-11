@@ -28,10 +28,10 @@ const { posts } = useBlogPosts()
 
 useSeoMeta({
   title: 'Blog overzicht - CodeBlog.nl',
-  description: 'Lees de nieuwste artikelen over .NET, Azure, VueJS en moderne softwareontwikkeling.',
+  description: 'Lees de nieuwste artikelen over .NET, Azure,en TypeScript',
 
   ogTitle: 'Blog overzicht - CodeBlog.nl',
-  ogDescription: 'Lees de nieuwste artikelen over .NET, Azure, VueJS en moderne softwareontwikkeling.',
+  ogDescription: 'Lees de nieuwste artikelen over .NET, Azure, en TypeScript.',
   ogType: 'website',
   ogUrl: 'https://codeblog.nl/blog',
   ogSiteName: 'CodeBlog.nl',
@@ -43,7 +43,7 @@ useSeoMeta({
 
   twitterCard: 'summary_large_image',
   twitterTitle: 'Blog overzicht - CodeBlog.nl',
-  twitterDescription: 'Lees de nieuwste artikelen over .NET, Azure, VueJS en moderne softwareontwikkeling.',
+  twitterDescription: 'Lees de nieuwste artikelen over .NET, Azure, en TypeScript.',
   twitterImage: 'https://codeblog.nl/og/blog.png',
   twitterImageAlt: 'Blog overzicht - CodeBlog.nl',
 })

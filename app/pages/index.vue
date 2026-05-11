@@ -6,7 +6,7 @@
         CodeBlog.nl
       </h1>
       <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
-        Technische inzichten voor Nederlandstalige developers. Verdiep je in .NET, C#, Azure en VueJS.
+        Technische inzichten voor Nederlandstalige developers. Verdiep je in .NET, C#, Azure en TypeScript.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
         <UButton to="/blog" size="xl" label="Bekijk Artikelen" icon="i-heroicons-document-text" />
@@ -44,11 +44,11 @@
         <template #header>
           <div class="flex items-center gap-3">
             <UIcon name="i-heroicons-code-bracket" class="w-8 h-8 text-primary-500" />
-            <h2 class="text-xl font-bold">VueJS</h2>
+            <h2 class="text-xl font-bold">TypeScript</h2>
           </div>
         </template>
         <p class="text-gray-600 dark:text-gray-400">
-          Moderne frontend development met VueJS. Componenten, state management en Nuxt.
+          Moderne webontwikkeling met type-safe JavaScript, frameworks, tooling en frontend architectuur.
         </p>
       </UCard>
     </section>
@@ -78,11 +78,11 @@
 const { recentPosts } = useBlogPosts()
 
 useSeoMeta({
-  title: 'CodeBlog.nl - .NET, C#, Azure en VueJS voor Nederlandstalige Developers',
-  description: 'CodeBlog.nl is hét platform voor Nederlandstalige developers over .NET, C#, Azure, VueJS en moderne software engineering.',
+  title: 'CodeBlog.nl - .NET, C#, Azure en TypeScript voor Nederlandstalige Developers',
+  description: 'CodeBlog.nl is hét platform voor Nederlandstalige developers over .NET, C#, Azure, en TypeScript.',
 
-  ogTitle: 'CodeBlog.nl - .NET, C#, Azure en VueJS voor Nederlandstalige Developers',
-  ogDescription: 'CodeBlog.nl is hét platform voor Nederlandstalige developers over .NET, C#, Azure, VueJS en moderne software engineering.',
+  ogTitle: 'CodeBlog.nl - .NET, C#, Azure en TypeScript voor Nederlandstalige Developers',
+  ogDescription: 'CodeBlog.nl is hét platform voor Nederlandstalige developers over .NET, C#, Azure, en TypeScript.',
   ogType: 'website',
   ogUrl: 'https://codeblog.nl/',
   ogSiteName: 'CodeBlog.nl',
@@ -90,18 +90,18 @@ useSeoMeta({
   ogImage: 'https://codeblog.nl/og/home.png',
   ogImageWidth: 1200,
   ogImageHeight: 630,
-  ogImageAlt: 'CodeBlog.nl - Nederlandstalige blog over .NET, C#, Azure en VueJS',
+  ogImageAlt: 'CodeBlog.nl - Nederlandstalige blog over .NET, C#, Azure en TypeScript',
 
   twitterCard: 'summary_large_image',
-  twitterTitle: 'CodeBlog.nl - .NET, C#, Azure en VueJS voor Nederlandstalige Developers',
-  twitterDescription: 'CodeBlog.nl is hét platform voor Nederlandstalige developers over .NET, C#, Azure, VueJS en moderne software engineering.',
+  twitterTitle: 'CodeBlog.nl - .NET, C#, Azure en TypeScript voor Nederlandstalige Developers',
+  twitterDescription: 'CodeBlog.nl is hét platform voor Nederlandstalige developers over .NET, C#, Azure,en TypeScript.',
   twitterImage: 'https://codeblog.nl/og/home.png',
-  twitterImageAlt: 'CodeBlog.nl - Nederlandstalige blog over .NET, C#, Azure en VueJS',
+  twitterImageAlt: 'CodeBlog.nl - Nederlandstalige blog over .NET, C#, Azure en TypeScript',
 })
 
 defineOgImageComponent('General', {
   title: 'CodeBlog.nl',
-  description: 'Technische inzichten voor Nederlandstalige developers over .NET, C#, Azure en VueJS.',
-  alt: 'CodeBlog.nl - Social media afbeelding'
+  description: 'Technische inzichten voor Nederlandstalige developers over .NET, C#, Azure en TypeScript.',
+  alt: 'CodeBlog.nl - Nederlandstalige blog over .NET, C#, Azure en TypeScript'
 })
 </script>
