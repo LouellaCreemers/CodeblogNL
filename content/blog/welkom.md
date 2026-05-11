@@ -1,6 +1,6 @@
 ---
 title: 'Welkom op codeblog.nl!'
-description: 'Een warm welkom aan iedereen op het nieuwe platform voor ontwikkelaars.'
+description: 'Een warm welkom aan iedereen op het nieuwe platform voor software developers.'
 date: '19/04/26'
 author: 'Louella Creemers'
 tags: []
