@@ -8,6 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "lint": "eslint .",
+    "lint:md": "markdownlint \"**/*.{md,mdx}\" --ignore node_modules",
     "format:check": "prettier --check \"**/*.json\"",
     "test": "playwright test",
     "test:ui": "playwright test --ui",
@@ -37,6 +38,7 @@
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.0",
     "eslint": "^9.39.4",
+    "markdownlint-cli": "^0.48.0",
     "prettier": "^3.5.2"
   }
 }

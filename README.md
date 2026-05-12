@@ -26,6 +26,7 @@ We welcome contributions! To keep this README clean, all instructions on how to 
 ## Getting Started
 
 ### Manual Setup
+
 ```bash
 # Install dependencies
 npm install
@@ -38,6 +39,7 @@ npm run build
 ```
 
 ### Using Docker
+
 If you have Docker installed, you can run the development environment without installing Node.js locally:
 
 ```bash
