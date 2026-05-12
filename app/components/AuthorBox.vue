@@ -9,7 +9,7 @@
     <div class="space-y-3">
       <div class="space-y-1">
         <h3 class="text-xl font-bold text-gray-900 dark:text-white">{{ author.name }}</h3>
-        <p class="text-sm font-medium text-primary-500 uppercase tracking-wider">Auteur</p>
+        <p class="text-sm font-medium text-primary-600 dark:text-primary-400 uppercase tracking-wider">Auteur</p>
       </div>
       <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
         {{ author.description }}

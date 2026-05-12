@@ -15,9 +15,9 @@
           {{ doc.description }}
         </p>
 
-        <div class="flex items-center gap-6 text-sm text-gray-500 border-y border-gray-100 dark:border-gray-800 py-4">
+        <div class="flex items-center gap-6 text-sm text-gray-500 dark:text-gray-400 border-y border-gray-100 dark:border-gray-800 py-4">
           <div v-if="doc.author" class="flex items-center gap-2">
-            <span class="font-medium uppercase text-xs tracking-widest text-primary-500">Auteur: {{ doc.author }}</span>
+            <span class="font-medium uppercase text-xs tracking-widest text-primary-600 dark:text-primary-400">Auteur: {{ doc.author }}</span>
           </div>
           <div class="flex items-center gap-1">
             <UIcon name="i-heroicons-calendar" />
