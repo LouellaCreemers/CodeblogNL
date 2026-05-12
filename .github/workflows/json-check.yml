@@ -1,0 +1,37 @@
+name: JSON Formatting Check
+
+on:
+  pull_request:
+    paths:
+      - '**/*.json'
+      - '.prettierrc'
+      - '.prettierrc.json'
+      - '.prettierrc.yml'
+      - '.prettierrc.yaml'
+      - '.prettierrc.js'
+      - 'prettier.config.js'
+      - '.prettierrc.cjs'
+      - 'prettier.config.cjs'
+      - '.prettierrc.mjs'
+      - 'prettier.config.mjs'
+      - '.prettierrc.toml'
+  workflow_dispatch:
+
+jobs:
+  check-format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run JSON formatting check
+        run: npm run format:check
