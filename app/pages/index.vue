@@ -19,7 +19,7 @@
       <UCard class="transition-all duration-300">
         <template #header>
           <div class="flex items-center gap-3">
-            <UIcon name="i-heroicons-command-line" class="w-8 h-8 text-primary-500" />
+            <UIcon name="i-heroicons-command-line" class="w-8 h-8 text-primary-600 dark:text-primary-400" />
             <h2 class="text-xl font-bold">.NET & C#</h2>
           </div>
         </template>
@@ -31,7 +31,7 @@
       <UCard class="transition-all duration-300">
         <template #header>
           <div class="flex items-center gap-3">
-            <UIcon name="i-heroicons-cloud" class="w-8 h-8 text-primary-500" />
+            <UIcon name="i-heroicons-cloud" class="w-8 h-8 text-primary-600 dark:text-primary-400" />
             <h2 class="text-xl font-bold">Azure</h2>
           </div>
         </template>
@@ -43,7 +43,7 @@
       <UCard class="transition-all duration-300">
         <template #header>
           <div class="flex items-center gap-3">
-            <UIcon name="i-heroicons-code-bracket" class="w-8 h-8 text-primary-500" />
+            <UIcon name="i-heroicons-code-bracket" class="w-8 h-8 text-primary-600 dark:text-primary-400" />
             <h2 class="text-xl font-bold">TypeScript</h2>
           </div>
         </template>
@@ -57,7 +57,7 @@
     <section class="space-y-8 py-12">
       <div class="flex justify-between items-end">
         <h2 class="text-2xl font-bold">Recente Artikelen</h2>
-        <NuxtLink to="/blog" class="text-primary-500 hover:underline text-sm font-medium">Alle artikelen &rarr;</NuxtLink>
+        <NuxtLink to="/blog" class="text-primary-600 dark:text-primary-400 hover:underline text-sm font-medium">Alle artikelen &rarr;</NuxtLink>
       </div>
 
       <div v-if="recentPosts.length" class="grid grid-cols-1 md:grid-cols-2 gap-8">

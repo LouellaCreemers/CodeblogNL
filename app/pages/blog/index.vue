@@ -11,7 +11,7 @@
     </div>
 
     <div v-else class="text-center py-20 bg-gray-50 dark:bg-gray-950/50 rounded-2xl border border-dashed border-gray-300 dark:border-gray-700 space-y-4">
-      <UIcon name="i-heroicons-document-minus" class="w-12 h-12 text-gray-400 mx-auto" />
+      <UIcon name="i-heroicons-document-minus" class="w-12 h-12 text-gray-500 dark:text-gray-400 mx-auto" />
       <div class="space-y-2">
         <h2 class="text-xl font-semibold">Nog geen artikelen</h2>
         <p class="text-gray-500 dark:text-gray-400 max-w-sm mx-auto">

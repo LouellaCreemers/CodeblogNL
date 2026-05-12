@@ -2,7 +2,7 @@
   <div class="flex flex-col min-h-screen">
     <a
       href="#main"
-      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] bg-primary-500 text-white px-4 py-2 rounded-md shadow-lg"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] bg-primary-600 text-white px-4 py-2 rounded-md shadow-lg"
     >
       Skip naar hoofdinhoud
     </a>

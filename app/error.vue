@@ -13,7 +13,7 @@
       <UButton to="/blog" size="xl" color="gray" variant="ghost" label="Bekijk onze Blog" icon="i-heroicons-document-text" />
     </div>
 
-    <div class="pt-12 text-gray-400 dark:text-gray-600 italic">
+    <div class="pt-12 text-gray-600 dark:text-gray-400 italic">
       <p>"Niet alle dwalenden zijn verdwaald, maar deze link is dat wel."</p>
     </div>
   </div>
