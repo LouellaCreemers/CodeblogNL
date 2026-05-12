@@ -6,8 +6,8 @@ Bedankt dat je wilt bijdragen! We hebben het proces zo eenvoudig mogelijk gemaak
 
 Artikelen staan in de map `content/blog/`. Volg deze stappen om een nieuw artikel toe te voegen:
 
-1.  **Maak een nieuw Markdown-bestand**: Maak een bestand aan in `content/blog/` met de naam `jouw-artikel-titel.md`.
-2.  **Voeg Frontmatter toe**: Elk artikel begint met een blok tekst tussen `---`. Dit bevat de metadata:
+1. **Maak een nieuw Markdown-bestand**: Maak een bestand aan in `content/blog/` met de naam `jouw-artikel-titel.md`.
+2. **Voeg Frontmatter toe**: Elk artikel begint met een blok tekst tussen `---`. Dit bevat de metadata:
 
     ```markdown
     ---
@@ -22,14 +22,15 @@ Artikelen staan in de map `content/blog/`. Volg deze stappen om een nieuw artike
     Je kan hier alle markdown dingen (koppen, codeblokken, links, etc.) gebruiken.
     ```
 
-3.  **Koppel een auteur**: Gebruik de exact dezelfde naam als in je auteursbestand (`content/authors/JouwNaam.json`) bij de `author` property in de frontmatter.
+3. **Koppel een auteur**: Gebruik de exact dezelfde naam als in je auteursbestand (`content/authors/JouwNaam.json`) bij de `author` property in de frontmatter.
 
 ## Hoe voeg ik een auteur toe?
 
 Als dit je eerste artikel is, voeg jezelf dan toe als auteur:
 
-1.  **Maak een nieuw JSON-bestand**: Maak een bestand aan in `content/authors/` met de naam `VoornaamAchternaam.json` (bijv. `LouellaCreemers.json`).
-2.  **Voeg je gegevens toe**: Gebruik de volgende structuur:
+1. **Maak een nieuw JSON-bestand**: Maak een bestand aan in `content/authors/` met de naam `VoornaamAchternaam.json` (bijv. `LouellaCreemers.json`).
+2. **Voeg je gegevens toe**: Gebruik de volgende structuur:
+
     ```json
     {
       "name": "Jouw Volledige Naam",
@@ -38,7 +39,8 @@ Als dit je eerste artikel is, voeg jezelf dan toe als auteur:
       "link": "https://jouw-website.nl"
     }
     ```
-3.  **Voeg een foto toe**: Plaats je profielfoto in de map `public/images/authors/`. Zorg dat de naam in de JSON-file (`image`) exact overeenkomt met het bestandspad.
+
+3. **Voeg een foto toe**: Plaats je profielfoto in de map `public/images/authors/`. Zorg dat de naam in de JSON-file (`image`) exact overeenkomt met het bestandspad.
 
 ## Afbeeldingen gebruiken
 
@@ -60,20 +62,24 @@ Als je de website lokaal wilt draaien om je wijzigingen te zien:
 
 Als je Docker hebt geïnstalleerd, kun je de development omgeving draaien zonder lokaal Node.js te installeren:
 
-1.  **Bouw de image**: 
+1. **Bouw de image**:
+
     ```bash
     docker build -t codeblog-dev -f Dockerfile.dev .
     ```
-2.  **Start de container**:
+
+2. **Start de container**:
+
     ```bash
     docker run -it --rm -p 3000:3000 -v ${PWD}:/app codeblog-dev
     ```
+
     *Op Windows (PowerShell) gebruik je `${PWD}`, op Linux/Mac gebruik je `$(pwd)`.*
 
 De website is daarna bereikbaar op `http://localhost:3000`. Wijzigingen die je lokaal maakt, worden direct doorgevoerd in de container dankzij het 'volume' (`-v`).
 
-
 ### Handmatig
+
 1. Installeer afhankelijkheden: `npm install`
 2. Start de development server: `npm run dev`
 3. Ga naar `http://localhost:3000`

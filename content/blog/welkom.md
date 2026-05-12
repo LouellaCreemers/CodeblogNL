@@ -17,10 +17,10 @@ Het idee voor dit platform ontstond toen ik in Amerika was. Ik zat in een groep 
 ## Wat kun je hier verwachten?
 
 Op deze blog zullen je regelmatig artikelen zien verschijnen over:
+
 - Microsoft tech zoals Azure en .NET.
 - Moderne webontwikkeling met frameworks zoals Nuxt en Vue.
 - Tips en tricks voor efficiënter programmeren.
 - Persoonlijke ervaringen en lessen uit de praktijk.
 
 Omdat dit platform open source is, kan iedereen die wilt aan dit blog platform meewerken. Blijf kijken voor toekomstige posts!
-
