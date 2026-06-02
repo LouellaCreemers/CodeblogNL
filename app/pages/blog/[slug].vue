@@ -87,6 +87,16 @@ if (doc.value) {
     },
   }
 
+  useHead({
+    script: [
+      {
+        id: `schema-article-${doc.value.slug}`,
+        type: 'application/ld+json',
+        children: JSON.stringify(articleSchema),
+      },
+    ],
+  })
+
   useSeoMeta({
     title: `${doc.value.title} - CodeBlog.nl`,
     description: doc.value.description,
@@ -103,17 +113,7 @@ if (doc.value) {
     twitterDescription: doc.value.description,
   })
 
-  useHead({
-    script: [
-      {
-        id: 'schema-article',
-        type: 'application/ld+json',
-        children: JSON.stringify(articleSchema),
-      },
-    ],
-  })
-
-  defineOgImageComponent('BlogArticle', {
+  defineOgImage('BlogArticle', {
     title: doc.value.title,
     description: doc.value.description,
     authorName: author.value?.name || doc.value.author,
