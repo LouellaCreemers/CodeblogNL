@@ -59,34 +59,5 @@ export default defineNuxtConfig({
   },
   future: {
     compatibilityVersion: 4,
-  },
-  hooks: {
-    'build:manifest': (manifest) => {
-      const css = Object.values(manifest).find(options => options.isEntry)?.css
-      if (css) {
-        for (let i = css.length - 1; i >= 0; i--) {
-          if (css[i].startsWith('entry')) {
-            css.splice(i, 1)
-          }
-        }
-      }
-    },
-  },
-  nitro: {
-    compressPublicAssets: {
-      gzip: true,
-      brotli: true
-    },
-    routeRules: {
-      '/**': {
-        headers: {
-          'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
-          'Content-Security-Policy': "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; font-src 'self' data:; upgrade-insecure-requests",
-          'X-Frame-Options': 'DENY',
-          'X-Content-Type-Options': 'nosniff',
-          'Referrer-Policy': 'strict-origin-when-cross-origin'
-        }
-      }
-    }
   }
 })
