@@ -87,6 +87,16 @@ if (doc.value) {
     },
   }
 
+  useHead({
+    script: [
+      {
+        id: `schema-article-${doc.value.slug}`,
+        type: 'application/ld+json',
+        children: JSON.stringify(articleSchema),
+      },
+    ],
+  })
+
   useSeoMeta({
     title: `${doc.value.title} - CodeBlog.nl`,
     description: doc.value.description,
