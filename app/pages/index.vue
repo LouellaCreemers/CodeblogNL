@@ -99,7 +99,7 @@ useSeoMeta({
   twitterImageAlt: 'CodeBlog.nl - Nederlandstalige blog over .NET, C#, Azure en TypeScript',
 })
 
-defineOgImageComponent('General', {
+defineOgImage('General', {
   title: 'CodeBlog.nl',
   description: 'Technische inzichten voor Nederlandstalige developers over .NET, C#, Azure en TypeScript.',
   alt: 'CodeBlog.nl - Nederlandstalige blog over .NET, C#, Azure en TypeScript'

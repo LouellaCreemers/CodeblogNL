@@ -80,7 +80,7 @@ if (doc.value) {
     twitterDescription: doc.value.description,
   })
 
-  defineOgImageComponent('BlogArticle', {
+  defineOgImage('BlogArticle', {
     title: doc.value.title,
     description: doc.value.description,
     authorName: author.value?.name || doc.value.author,

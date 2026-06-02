@@ -70,7 +70,7 @@ useSeoMeta({
   twitterImageAlt: 'Over ons - CodeBlog.nl',
 })
 
-defineOgImageComponent('General', {
+defineOgImage('General', {
   title: 'Over CodeBlog.nl',
   description: 'Full-stack content, gewoon in het Nederlands.',
   alt: 'Over CodeBlog.nl - Social media afbeelding'

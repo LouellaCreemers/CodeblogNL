@@ -36,13 +36,9 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
     'nuxt-gtag',
-    'nuxt-og-image'
+    'nuxt-og-image',
+    '@nuxt/fonts'
   ],
-  ogImage: {
-    defaults: {
-      component: 'General'
-    }
-  },
   content: {
     database: {
       type: 'sqlite',

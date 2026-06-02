@@ -48,7 +48,7 @@ useSeoMeta({
   twitterImageAlt: 'Blog overzicht - CodeBlog.nl',
 })
 
-defineOgImageComponent('General', {
+defineOgImage('General', {
   title: 'Blog Artikelen',
   description: 'Ontdek onze laatste technische artikelen en tutorials.',
   alt: 'Blog overzicht - CodeBlog.nl'
