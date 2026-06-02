@@ -78,7 +78,7 @@
 const { recentPosts } = useBlogPosts()
 
 useSeoMeta({
-  title: 'CodeBlog.nl - .NET, C#, Azure en TypeScript voor Nederlandstalige Developers',
+  title: 'CodeBlog.nl - .NET, C#, Azure en TypeScript',
   description: 'CodeBlog.nl is hét platform voor Nederlandstalige developers over .NET, C#, Azure, en TypeScript.',
 
   ogTitle: 'CodeBlog.nl - .NET, C#, Azure en TypeScript voor Nederlandstalige Developers',
@@ -97,6 +97,12 @@ useSeoMeta({
   twitterDescription: 'CodeBlog.nl is hét platform voor Nederlandstalige developers over .NET, C#, Azure,en TypeScript.',
   twitterImage: 'https://codeblog.nl/og/home.png',
   twitterImageAlt: 'CodeBlog.nl - Nederlandstalige blog over .NET, C#, Azure en TypeScript',
+})
+
+useHead({
+  link: [
+    { rel: 'canonical', href: 'https://codeblog.nl/' }
+  ]
 })
 
 defineOgImage('General', {
