@@ -64,6 +64,29 @@ const { data: author } = await useAsyncData(`author-${doc.value?.author}`, () =>
 })
 
 if (doc.value) {
+  const articleUrl = `https://codeblog.nl/blog/${doc.value.slug}`
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: doc.value.title,
+    description: doc.value.description,
+    datePublished: doc.value.date,
+    dateModified: doc.value.date,
+    mainEntityOfPage: articleUrl,
+    author: {
+      '@type': 'Person',
+      name: author.value?.name || doc.value.author,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'CodeBlog.nl',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://codeblog.nl/favicon.ico',
+      },
+    },
+  }
+
   useSeoMeta({
     title: `${doc.value.title} - CodeBlog.nl`,
     description: doc.value.description,
@@ -71,7 +94,7 @@ if (doc.value) {
     ogTitle: `${doc.value.title} - CodeBlog.nl`,
     ogDescription: doc.value.description,
     ogType: 'article',
-    ogUrl: `https://codeblog.nl/blog/${doc.value.slug}`,
+    ogUrl: articleUrl,
 
     articleAuthor: author.value?.name || doc.value.author,
     articlePublishedTime: doc.value.date,
